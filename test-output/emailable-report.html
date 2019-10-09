@@ -1,0 +1,186 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="7">Hub Spot Test Suite</th></tr>
+<tr><td><a href="#t0">Hub Spot Regression Test</a></td><td class="num">1</td><td class="num">0</td><td class="num attn">6</td><td class="num">210,768</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Hub Spot Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Hub Spot Regression Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="6">com.qa.hubspot.tests.ContactsPageTest</td><td><a href="#m0">createContactsTest</a></td><td rowspan="6">1570606169174</td><td rowspan="6">12449</td></tr><tr class="failedeven"><td><a href="#m1">createContactsTest</a></td></tr><tr class="failedeven"><td><a href="#m2">createContactsTest</a></td></tr><tr class="failedeven"><td><a href="#m3">createContactsTest</a></td></tr><tr class="failedeven"><td><a href="#m4">createContactsTest</a></td></tr><tr class="failedeven"><td><a href="#m5">createContactsTest</a></td></tr><tr><th colspan="4">Hub Spot Regression Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.qa.hubspot.tests.LoginTest</td><td><a href="#m6">verifyLoginPageTitleTest</a></td><td rowspan="1">1570606221703</td><td rowspan="1">3122</td></tr></tbody>
+</table>
+<h2>Hub Spot Regression Test</h2><h3 id="m0">com.qa.hubspot.tests.ContactsPageTest#createContactsTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>shashank@gmail.com</td><td>shashank</td><td>LN5</td><td>QA Director</td></tr><tr><th colspan="4">Exception</th></tr><tr><td colspan="4"><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.id: uid-ctrl-1&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.qa.hubspot.pages.ContactsPage.createNewContact(ContactsPage.java:46)
+	at com.qa.hubspot.tests.ContactsPageTest.createContactsTest(ContactsPageTest.java:58)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#uid\-ctrl\-1&quot;}
+  (Session info: chrome=76.0.3809.132)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;C40GF14RPOOL&apos;, ip: &apos;10.131.59.50&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\TARUN~1.KUM\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:49736}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5e7641d4c2448ee87413f6b38872cc7d
+*** Element info: {Using=id, value=uid-ctrl-1}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy10.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:670)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:666)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 27 more
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.qa.hubspot.tests.ContactsPageTest#createContactsTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>shikha@gmail.com</td><td>shikha</td><td>LN3</td><td>Language Expert</td></tr><tr><th colspan="4">Exception</th></tr><tr><td colspan="4"><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span&gt;...&lt;/span&gt; is not clickable at point (1807, 103). Other element would receive the click: &lt;div class=&quot;UILoadingOverlay__OverlayInnerWrapper-c7ouxl-0 duDFbq&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=76.0.3809.132)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;C40GF14RPOOL&apos;, ip: &apos;10.131.59.50&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\TARUN~1.KUM\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:49608}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6aae669421360a40260bf0cb58eca15e
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy10.click(Unknown Source)
+	at com.qa.hubspot.pages.ContactsPage.createNewContact(ContactsPage.java:44)
+	at com.qa.hubspot.tests.ContactsPageTest.createContactsTest(ContactsPageTest.java:58)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.qa.hubspot.tests.ContactsPageTest#createContactsTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>tarun@gmail.com</td><td>tarun</td><td>LN1</td><td>Project Lead</td></tr><tr><th colspan="4">Exception</th></tr><tr><td colspan="4"><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.id: uid-ctrl-1&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.qa.hubspot.pages.ContactsPage.createNewContact(ContactsPage.java:46)
+	at com.qa.hubspot.tests.ContactsPageTest.createContactsTest(ContactsPageTest.java:58)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#uid\-ctrl\-1&quot;}
+  (Session info: chrome=76.0.3809.132)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;C40GF14RPOOL&apos;, ip: &apos;10.131.59.50&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\TARUN~1.KUM\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:49488}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: ed025b83518ef28871e5b1bd2898386a
+*** Element info: {Using=id, value=uid-ctrl-1}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy10.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:670)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:666)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 27 more
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.qa.hubspot.tests.ContactsPageTest#createContactsTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>naveen@gmail.com</td><td>naveen</td><td>LN2</td><td>PM</td></tr><tr><th colspan="4">Exception</th></tr><tr><td colspan="4"><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.id: uid-ctrl-1&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.qa.hubspot.pages.ContactsPage.createNewContact(ContactsPage.java:46)
+	at com.qa.hubspot.tests.ContactsPageTest.createContactsTest(ContactsPageTest.java:58)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#uid\-ctrl\-1&quot;}
+  (Session info: chrome=76.0.3809.132)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;C40GF14RPOOL&apos;, ip: &apos;10.131.59.50&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\TARUN~1.KUM\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:49545}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5ad55e9b87791dc76b3e704309b14b57
+*** Element info: {Using=id, value=uid-ctrl-1}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy10.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:670)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:666)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 27 more
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.qa.hubspot.tests.ContactsPageTest#createContactsTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>avi@gmail.com</td><td>Avyan</td><td>LN4</td><td>QA</td></tr><tr><th colspan="4">Exception</th></tr><tr><td colspan="4"><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span&gt;...&lt;/span&gt; is not clickable at point (1807, 103). Other element would receive the click: &lt;div class=&quot;UILoadingOverlay__OverlayInnerWrapper-c7ouxl-0 duDFbq&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=76.0.3809.132)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;C40GF14RPOOL&apos;, ip: &apos;10.131.59.50&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\TARUN~1.KUM\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:49678}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 279a260a7e71484be35db9e9fd18c8b0
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy10.click(Unknown Source)
+	at com.qa.hubspot.pages.ContactsPage.createNewContact(ContactsPage.java:44)
+	at com.qa.hubspot.tests.ContactsPageTest.createContactsTest(ContactsPageTest.java:58)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.qa.hubspot.tests.ContactsPageTest#createContactsTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>null</td><td>null</td><td>null</td><td>null</td></tr><tr><th colspan="4">Exception</th></tr><tr><td colspan="4"><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span&gt;...&lt;/span&gt; is not clickable at point (1807, 103). Other element would receive the click: &lt;div class=&quot;UILoadingOverlay__OverlayInnerWrapper-c7ouxl-0 duDFbq&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=76.0.3809.132)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;C40GF14RPOOL&apos;, ip: &apos;10.131.59.50&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\TARUN~1.KUM\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:49790}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c59459db9bc82ae5913df399302fa6bf
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy10.click(Unknown Source)
+	at com.qa.hubspot.pages.ContactsPage.createNewContact(ContactsPage.java:44)
+	at com.qa.hubspot.tests.ContactsPageTest.createContactsTest(ContactsPageTest.java:58)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.qa.hubspot.tests.LoginTest#verifyLoginPageTitleTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

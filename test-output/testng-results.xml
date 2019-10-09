@@ -1,0 +1,633 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="6" ignored="0" total="7" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Hub Spot Test Suite" duration-ms="210768" started-at="2019-10-09T07:26:54Z" finished-at="2019-10-09T07:30:25Z">
+    <groups>
+    </groups>
+    <test name="Hub Spot Regression Test" duration-ms="210768" started-at="2019-10-09T07:26:54Z" finished-at="2019-10-09T07:30:25Z">
+      <class name="com.qa.hubspot.tests.ContactsPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.hubspot.tests.ContactsPageTest@6fb0d3ed]" name="setUp" is-config="true" duration-ms="28517" started-at="2019-10-09T07:26:55Z" finished-at="2019-10-09T07:27:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="createContactsTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.hubspot.tests.ContactsPageTest@6fb0d3ed]" name="createContactsTest" duration-ms="11380" started-at="2019-10-09T07:27:23Z" data-provider="getContactsData" finished-at="2019-10-09T07:27:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tarun@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[tarun]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[LN1]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Project Lead]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.id: uid-ctrl-1' (tried for 10 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.id: uid-ctrl-1' (tried for 10 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at com.qa.hubspot.pages.ContactsPage.createNewContact(ContactsPage.java:46)
+at com.qa.hubspot.tests.ContactsPageTest.createContactsTest(ContactsPageTest.java:58)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#uid\-ctrl\-1"}
+  (Session info: chrome=76.0.3809.132)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'C40GF14RPOOL', ip: '10.131.59.50', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\TARUN~1.KUM\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:49488}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: ed025b83518ef28871e5b1bd2898386a
+*** Element info: {Using=id, value=uid-ctrl-1}
+at sun.reflect.GeneratedConstructorAccessor18.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+at org.openqa.selenium.By$ById.findElement(By.java:188)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy10.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:670)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:666)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+... 27 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createContactsTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.hubspot.tests.ContactsPageTest@6fb0d3ed]" name="tearDown" is-config="true" duration-ms="696" started-at="2019-10-09T07:27:35Z" finished-at="2019-10-09T07:27:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.hubspot.tests.ContactsPageTest@6fb0d3ed]" name="setUp" is-config="true" duration-ms="24284" started-at="2019-10-09T07:27:35Z" finished-at="2019-10-09T07:28:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="createContactsTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.hubspot.tests.ContactsPageTest@6fb0d3ed]" name="createContactsTest" duration-ms="12730" started-at="2019-10-09T07:28:00Z" data-provider="getContactsData" finished-at="2019-10-09T07:28:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[naveen@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[naveen]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[LN2]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[PM]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.id: uid-ctrl-1' (tried for 10 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.id: uid-ctrl-1' (tried for 10 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at com.qa.hubspot.pages.ContactsPage.createNewContact(ContactsPage.java:46)
+at com.qa.hubspot.tests.ContactsPageTest.createContactsTest(ContactsPageTest.java:58)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#uid\-ctrl\-1"}
+  (Session info: chrome=76.0.3809.132)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'C40GF14RPOOL', ip: '10.131.59.50', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\TARUN~1.KUM\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:49545}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5ad55e9b87791dc76b3e704309b14b57
+*** Element info: {Using=id, value=uid-ctrl-1}
+at sun.reflect.GeneratedConstructorAccessor18.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+at org.openqa.selenium.By$ById.findElement(By.java:188)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy10.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:670)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:666)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+... 27 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createContactsTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.hubspot.tests.ContactsPageTest@6fb0d3ed]" name="tearDown" is-config="true" duration-ms="676" started-at="2019-10-09T07:28:12Z" finished-at="2019-10-09T07:28:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.hubspot.tests.ContactsPageTest@6fb0d3ed]" name="setUp" is-config="true" duration-ms="23810" started-at="2019-10-09T07:28:13Z" finished-at="2019-10-09T07:28:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="createContactsTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.hubspot.tests.ContactsPageTest@6fb0d3ed]" name="createContactsTest" duration-ms="1850" started-at="2019-10-09T07:28:37Z" data-provider="getContactsData" finished-at="2019-10-09T07:28:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[shikha@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[shikha]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[LN3]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Language Expert]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <span>...</span> is not clickable at point (1807, 103). Other element would receive the click: <div class="UILoadingOverlay__OverlayInnerWrapper-c7ouxl-0 duDFbq">...</div>
+  (Session info: chrome=76.0.3809.132)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'C40GF14RPOOL', ip: '10.131.59.50', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\TARUN~1.KUM\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:49608}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6aae669421360a40260bf0cb58eca15e]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span>...</span> is not clickable at point (1807, 103). Other element would receive the click: <div class="UILoadingOverlay__OverlayInnerWrapper-c7ouxl-0 duDFbq">...</div>
+  (Session info: chrome=76.0.3809.132)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'C40GF14RPOOL', ip: '10.131.59.50', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\TARUN~1.KUM\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:49608}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6aae669421360a40260bf0cb58eca15e
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at com.sun.proxy.$Proxy10.click(Unknown Source)
+at com.qa.hubspot.pages.ContactsPage.createNewContact(ContactsPage.java:44)
+at com.qa.hubspot.tests.ContactsPageTest.createContactsTest(ContactsPageTest.java:58)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createContactsTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.hubspot.tests.ContactsPageTest@6fb0d3ed]" name="tearDown" is-config="true" duration-ms="681" started-at="2019-10-09T07:28:39Z" finished-at="2019-10-09T07:28:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.hubspot.tests.ContactsPageTest@6fb0d3ed]" name="setUp" is-config="true" duration-ms="23459" started-at="2019-10-09T07:28:39Z" finished-at="2019-10-09T07:29:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="createContactsTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.hubspot.tests.ContactsPageTest@6fb0d3ed]" name="createContactsTest" duration-ms="1903" started-at="2019-10-09T07:29:03Z" data-provider="getContactsData" finished-at="2019-10-09T07:29:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[avi@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Avyan]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[LN4]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[QA]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <span>...</span> is not clickable at point (1807, 103). Other element would receive the click: <div class="UILoadingOverlay__OverlayInnerWrapper-c7ouxl-0 duDFbq">...</div>
+  (Session info: chrome=76.0.3809.132)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'C40GF14RPOOL', ip: '10.131.59.50', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\TARUN~1.KUM\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:49678}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 279a260a7e71484be35db9e9fd18c8b0]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span>...</span> is not clickable at point (1807, 103). Other element would receive the click: <div class="UILoadingOverlay__OverlayInnerWrapper-c7ouxl-0 duDFbq">...</div>
+  (Session info: chrome=76.0.3809.132)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'C40GF14RPOOL', ip: '10.131.59.50', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\TARUN~1.KUM\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:49678}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 279a260a7e71484be35db9e9fd18c8b0
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at com.sun.proxy.$Proxy10.click(Unknown Source)
+at com.qa.hubspot.pages.ContactsPage.createNewContact(ContactsPage.java:44)
+at com.qa.hubspot.tests.ContactsPageTest.createContactsTest(ContactsPageTest.java:58)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createContactsTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.hubspot.tests.ContactsPageTest@6fb0d3ed]" name="tearDown" is-config="true" duration-ms="647" started-at="2019-10-09T07:29:05Z" finished-at="2019-10-09T07:29:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.hubspot.tests.ContactsPageTest@6fb0d3ed]" name="setUp" is-config="true" duration-ms="23407" started-at="2019-10-09T07:29:05Z" finished-at="2019-10-09T07:29:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="createContactsTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.hubspot.tests.ContactsPageTest@6fb0d3ed]" name="createContactsTest" duration-ms="12449" started-at="2019-10-09T07:29:29Z" data-provider="getContactsData" finished-at="2019-10-09T07:29:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[shashank@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[shashank]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[LN5]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[QA Director]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.id: uid-ctrl-1' (tried for 10 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.id: uid-ctrl-1' (tried for 10 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at com.qa.hubspot.pages.ContactsPage.createNewContact(ContactsPage.java:46)
+at com.qa.hubspot.tests.ContactsPageTest.createContactsTest(ContactsPageTest.java:58)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#uid\-ctrl\-1"}
+  (Session info: chrome=76.0.3809.132)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'C40GF14RPOOL', ip: '10.131.59.50', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\TARUN~1.KUM\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:49736}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5e7641d4c2448ee87413f6b38872cc7d
+*** Element info: {Using=id, value=uid-ctrl-1}
+at sun.reflect.GeneratedConstructorAccessor18.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+at org.openqa.selenium.By$ById.findElement(By.java:188)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy10.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:670)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:666)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+... 27 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createContactsTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.hubspot.tests.ContactsPageTest@6fb0d3ed]" name="tearDown" is-config="true" duration-ms="666" started-at="2019-10-09T07:29:41Z" finished-at="2019-10-09T07:29:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.hubspot.tests.ContactsPageTest@6fb0d3ed]" name="setUp" is-config="true" duration-ms="26856" started-at="2019-10-09T07:29:42Z" finished-at="2019-10-09T07:30:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="createContactsTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.hubspot.tests.ContactsPageTest@6fb0d3ed]" name="createContactsTest" duration-ms="1978" started-at="2019-10-09T07:30:09Z" data-provider="getContactsData" finished-at="2019-10-09T07:30:11Z">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+            <param index="2">
+              <value is-null="true"/>
+            </param>
+            <param index="3">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <span>...</span> is not clickable at point (1807, 103). Other element would receive the click: <div class="UILoadingOverlay__OverlayInnerWrapper-c7ouxl-0 duDFbq">...</div>
+  (Session info: chrome=76.0.3809.132)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'C40GF14RPOOL', ip: '10.131.59.50', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\TARUN~1.KUM\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:49790}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c59459db9bc82ae5913df399302fa6bf]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span>...</span> is not clickable at point (1807, 103). Other element would receive the click: <div class="UILoadingOverlay__OverlayInnerWrapper-c7ouxl-0 duDFbq">...</div>
+  (Session info: chrome=76.0.3809.132)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'C40GF14RPOOL', ip: '10.131.59.50', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\TARUN~1.KUM\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:49790}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c59459db9bc82ae5913df399302fa6bf
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at com.sun.proxy.$Proxy10.click(Unknown Source)
+at com.qa.hubspot.pages.ContactsPage.createNewContact(ContactsPage.java:44)
+at com.qa.hubspot.tests.ContactsPageTest.createContactsTest(ContactsPageTest.java:58)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createContactsTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.hubspot.tests.ContactsPageTest@6fb0d3ed]" name="tearDown" is-config="true" duration-ms="690" started-at="2019-10-09T07:30:11Z" finished-at="2019-10-09T07:30:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.hubspot.tests.ContactsPageTest -->
+      <class name="com.qa.hubspot.tests.LoginTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.hubspot.tests.LoginTest@10d59286]" name="setUp" is-config="true" duration-ms="9879" started-at="2019-10-09T07:30:11Z" finished-at="2019-10-09T07:30:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyLoginPageTitleTest()[pri:1, instance:com.qa.hubspot.tests.LoginTest@10d59286]" name="verifyLoginPageTitleTest" duration-ms="3122" started-at="2019-10-09T07:30:21Z" finished-at="2019-10-09T07:30:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginPageTitleTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.hubspot.tests.LoginTest@10d59286]" name="tearDown" is-config="true" duration-ms="613" started-at="2019-10-09T07:30:24Z" finished-at="2019-10-09T07:30:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.hubspot.tests.LoginTest -->
+    </test> <!-- Hub Spot Regression Test -->
+  </suite> <!-- Hub Spot Test Suite -->
+</testng-results>
